@@ -1,0 +1,148 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SapientCodingExercise",
+		"_postman_id": "458f618c-6c81-efec-572e-efd9d67b0eeb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/addProduct?price=99.33",
+			"request": {
+				"url": "http://localhost:8080/addProduct?price=99.33",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Samusng OLED TV\",\n\t\"description\":\"Samsung OLED Lanuched on Sept 2016\",\n\t\"type\":\"TV\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getProductByType?type=\"Mobile\"",
+			"request": {
+				"url": "http://localhost:8080/getProductByType?type=\"Mobile\"",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getAllProduct",
+			"request": {
+				"url": "http://localhost:8080/getAllProduct",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/removeProduct/1029710266681518",
+			"request": {
+				"url": "http://localhost:8080/removeProduct/1029710266681518",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/updateProductPrice/1028738471151175",
+			"request": {
+				"url": "http://localhost:8080/updateProductPrice/1028738471151175",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"id\": 1028738445954414,\n    \"price\": 4900\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getProduct?name=Iphone 7 Plus",
+			"request": {
+				"url": "http://localhost:8080/getProduct?name=Iphone 7 Plus",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/removePrice/1020370518259712",
+			"request": {
+				"url": "http://localhost:8090/removePrice/1020370518259712",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/updatePrice",
+			"request": {
+				"url": "http://localhost:8090/updatePrice",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1020370518259712,\n  \"price\": 1250\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/addPrice/1400",
+			"request": {
+				"url": "http://localhost:8090/addPrice/1400",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/getPrice/1020370518259712",
+			"request": {
+				"url": "http://localhost:8090/getPrice/1020370518259712",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
